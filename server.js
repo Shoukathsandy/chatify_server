@@ -33,9 +33,7 @@ import messageRoute from "./routes/message.js";
 
 const app = express();
 
-if (process.env.NODE_ENV !== "production") {
-  app.use(morgan("dev"));
-}
+
 
 app.use(express.json());
 app.use(cors());
